@@ -60,6 +60,7 @@ function getAll() {
 }
 
 function getFlag(country) {
+  console.log(country);
   let promise = fetch(`https://restcountries.eu/rest/v2/name/${country}`)
     .then(response => {
       return response.json();
@@ -67,7 +68,9 @@ function getFlag(country) {
     .then(data => {
       if (data[0].alpha2Code) {
         code = data[0].alpha2Code.toLowerCase();
-        select.style.backgroundImage = `url(https://www.countryflags.io/${code.toLowerCase()}/flat/48.png)`;
+        if (country === "UK") select.style.backgroundImage = "url(src/uk.jpg)";
+        else
+          select.style.backgroundImage = `url(https://www.countryflags.io/${code.toLowerCase()}/flat/48.png)`;
       }
     });
 }
