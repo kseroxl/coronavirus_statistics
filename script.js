@@ -149,7 +149,7 @@ getAllFirst();
 
 setInterval(() => {
   getAll();
-}, 1000);
+}, 2000);
 
 getCoronavirusData("Ukraine");
 select.addEventListener("change", () => {
