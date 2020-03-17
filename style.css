@@ -108,7 +108,8 @@ select:focus {
     font-size: 10pt;
   }
   .container {
-    height: 100vh;
+    height: 80vh;
+    margin-top: 20px;
   }
   body {
     background-image: url(src/backgroundSmall.png);
