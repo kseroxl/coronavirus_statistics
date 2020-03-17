@@ -108,7 +108,7 @@ select:focus {
   }
   .container {
     height: 80vh;
-    margin-top: 20px;
+    margin-top: 20px auto;
   }
   body {
     background-image: url(src/backgroundSmall.png);
