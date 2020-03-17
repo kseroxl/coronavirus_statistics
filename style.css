@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f7f3;
+  font-family: "Archivo Black", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(./background.png);
+  background-size: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  height: 60vh;
+  justify-content: space-evenly;
+}
+h1,
+h2 {
+  text-align: center;
+  display: inline;
+}
+h1 {
+  background-color: #ffcc00;
+  padding: 15px;
+}
+h2 {
+  background-color: #824dad;
+  color: #ffcc00;
+  padding: 15px;
+  margin-top: 50px;
+}
+select {
+  display: block;
+  width: 30vw;
+  height: 60px;
+  border: none;
+  padding: 15px;
+  font-size: 14pt;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 98%;
+  cursor: pointer;
+}
+.statisticAll {
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+select:focus {
+  outline: none;
+}
+.statistic {
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.numbers {
+  color: red;
+}
+#allCases,
+#allDeaths {
+  animation: animation 2s ease-in;
+}
+.animated {
+  animation: animation 2s ease-in;
+}
+@keyframes animation {
+  from {
+    color: black;
+  }
+  to {
+    color: red;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .help {
+    display: none;
+  }
+  .statistic,
+  .statisticAll {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 16pt;
+  }
+  h2 {
+    font-size: 14pt;
+  }
+  select {
+    font-size: 10pt;
+    height: 40px;
+    width: 70vw;
+    padding: 5px;
+    margin-bottom: -20px;
+  }
+  .statistic {
+    font-size: 10pt;
+  }
+  .container {
+    height: 75vh;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="bacteria.png" />
+    <title>Coronavirus Statistics</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coronavirus World Statistics</h1>
+      <div class="statisticAll">
+        <p class="stat" id="allCases"></p>
+        <p class="stat" id="allDeaths"></p>
+      </div>
+      <h2>Coronavirus Country Statistics</h2>
+      <select id="select"></select>
+      <div class="statistic">
+        <p id="cases">Cases:</p>
+        <span class="help">|</span>
+        <p id="deaths">Deaths:</p>
+        <span class="help">|</span>
+        <p id="todayCases">Today cases:</p>
+        <span class="help">|</span>
+        <p id="todayDeaths">Today deaths:</p>
+      </div>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+    <script src="./anime.min.js"></script>
+  </body>
+</html>
