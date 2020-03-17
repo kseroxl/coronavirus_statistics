@@ -8,7 +8,7 @@ body {
   font-family: "Archivo Black", sans-serif;
   height: 100vh;
   overflow: hidden;
-  background-image: url(./src/background.png);
+  background-image: url(src/background.png);
   background-size: cover;
 }
 .container {
@@ -111,6 +111,6 @@ select:focus {
     height: 100vh;
   }
   body {
-    background-image: url(./src/backgroundSmall.png);
+    background-image: url(src/backgroundSmall.png);
   }
 }
