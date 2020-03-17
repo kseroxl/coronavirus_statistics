@@ -102,7 +102,6 @@ select:focus {
     height: 40px;
     width: 70vw;
     padding: 5px;
-    margin-bottom: -20px;
   }
   .statistic {
     font-size: 10pt;
